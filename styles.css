@@ -1,0 +1,141 @@
+/* Estilos generales del cuerpo */
+* {
+    font-family: Poppins;
+}
+
+body {
+    background-image: url('https://talentotechbogota.co/opengraph-image.png?7585abe254eaba33');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal de la calculadora */
+.calculator-container {
+    padding: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    border-radius: 8px;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    background-color: rgba(31, 28, 109, 0.815); /* Fondo semi-transparente */
+}
+
+/* Estilo del título */
+.calculator-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.calculator-container select {
+    font-weight: 700;
+}
+
+/* Estilo de los campos de entrada, select y botón */
+.calculator-container input,
+.calculator-container select,
+.calculator-container button {
+    display: block; /* Asegura que estén en columnas */
+    width: 60%; /* Misma anchura */
+    padding: 10px;
+    margin: 10px auto; /* Centrados horizontalmente */
+    border: 1px solid rgba(31, 28, 109, 0.815);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho */
+}
+/* Contenedor personalizado */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/* Elemento principal (valor seleccionado) */
+.select-selected {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    transition: background-color 1s ease, color 0.5s ease;
+}
+.select-selected:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+/* Estilo de las opciones desplegables */
+.select-items {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(31, 28, 109, 0.815);
+    border-radius: 5px;
+    width: 100%;
+    z-index: 99;
+    transition: 1s ease, color 0.5s ease;
+}
+
+/* Ocultar inicialmente las opciones */
+.select-hide {
+    display: none;
+    
+}
+
+/* Opciones individuales */
+.select-items div {
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    background-color: white;
+    color: black;
+    transition: background-color 1s ease, color 0.3s ease; /* Transición suave */
+    border-radius: 4px;
+}
+
+/* Hover de las opciones */
+.select-items div:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Mostrar las opciones al abrir */
+.select-items div.active {
+    display: block;
+}
+
+
+/* Estilo del botón */
+.calculator-container button {
+    background-color: rgba(61, 58, 173, 0.815);
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+.calculator-container button:hover {
+    background-color: rgba(118, 113, 255, 0.815);
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+/* Estilo del resultado */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+}

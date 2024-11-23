@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculadora</h1>
+        <!-- Input para el primer número -->
+        <input type="number" id="num1" placeholder="Ingrese el primer número">
+        <!-- Input para el segundo número -->
+        <input type="number" id="num2" placeholder="Ingrese el segundo número">
+        <!-- Selector para elegir la operación matemática -->
+        <div class="custom-select">
+            <div class="select-selected">Seleccione una opcion</b></div>
+            <div class="select-items select-hide">
+                <div data-value="suma">Suma</div>
+                <div data-value="resta">Resta</div>
+                <div data-value="multiplicacion">Multiplicación</div>
+                <div data-value="division">División</div>
+            </div>
+        </div>
+        <!-- Botón para calcular -->
+        <button onclick="calcular()"><b>Calcular</b></button>
+        <!-- Contenedor para mostrar el resultado -->
+        <div class="result" id="result"></div>
+    </div>
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
